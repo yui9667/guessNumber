@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: inherit;
+  font-family: "Archivo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: #936ae1;
+  color: #ece1ff;
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 20px;
+}
+
+.between {
+  font-size: 40px;
+  line-height: 2;
+}
+.container1 .again {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+h1 {
+  font-size: 80px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.right {
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: baseline;
+  line-height: 3;
+}
+
+.number {
+  background-color: #ece1ff;
+  color: #000;
+  font-size: 70px;
+  width: 100%;
+  max-width: 400px;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #ece1ff;
+  color: inferit;
+  font-size: 60px;
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  height: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: #ece1ff;
+  color: #000;
+  font-size: 40px;
+  padding: 30px 40px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: #f8e0ff;
+}
+
+@media (max-width: 1300px) {
+  .container2 h1 {
+    font-size: 60px;
+  }
+  .number {
+    max-width: 300px;
+  }
+  .between {
+    font-size: 30px;
+  }
+  .btn {
+    padding: 20px 30px;
+    font-size: 30px;
+  }
+  .right {
+    font-size: 40px;
+    gap: 0;
+  }
+  .guess {
+    font-size: 40px;
+    max-width: 300px;
+    height: 150px;
+    margin-top: 20px;
+  }
+  .check {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .container2 h1 {
+    font-size: 40px;
+  }
+  .btn,
+  .container1 .again {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  main {
+    flex-direction: column;
+  }
+  .right {
+    font-size: 30px;
+  }
+  .number {
+    max-width: 200px;
+    height: 100px;
+  }
+  .guess {
+    max-width: 200px;
+  }
+  .between {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .container1 .again,
+  .btn,
+  .between {
+    font-size: 15px;
+  }
+  .container2 h1 {
+    font-size: 30px;
+  }
+  .number {
+    max-width: 150px;
+    height: 90px;
+    font-size: 40px;
+  }
+  .right {
+    font-size: 20px;
+  }
+}
